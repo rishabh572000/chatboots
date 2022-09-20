@@ -1,0 +1,189 @@
+.bootHome{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  .bootPlace{
+      position: absolute;
+      right: 1.5rem;
+      bottom: 1.5rem;
+      background: rgb(88, 124, 255);
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50px;
+    .bootIcon{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+        color: rgb(235, 180, 0);
+        cursor: pointer;
+     
+    }
+  }
+}
+
+// ---------------- chatContainerOuter ------------
+
+
+.chatContainerPlace{
+  position: absolute;
+ 
+  top: 35%;
+  right: 1rem;
+  width: 23rem;
+  bottom: 0;
+  background: rgb(218, 218, 218);
+  border-radius: 6px 6px 0 0;
+  overflow: hidden;
+  .ChatContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    .chatContainerHead{
+      width: 100%;
+      height: 2.2rem;
+      background-color: #f79533;
+      line-height: 2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      // -webkit-text-stroke:2px #fff;
+    }
+    .chatContainerHead::before{
+      content: 'Hoicko Assistant';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2rem;
+      background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+      transition: width 2s;
+      background-size: 200% 200%;
+
+      -webkit-text-fill-color:transparent;
+      -webkit-background-clip: text;
+      animation: animat 5s linear infinite;
+
+    }
+    .chatContainerHead:hover::before{
+      width: 100%;
+    }
+    @keyframes animat {
+      0%{
+        background-position: 0 0;
+      }
+      100%{
+        background-position: 300% 0;
+      }
+    }
+  
+
+    .chatBottom{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 3rem;
+      background-color: rgb(221, 221, 221);
+
+      .chatBottomContent{
+        display: flex;
+        justify-content: space-between;
+        
+        .chatInput{
+          width: 100%;
+          height: 100%;
+          height:3rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: rgb(183, 255, 219);
+          // position: relative;
+          // top: 50%;
+          // transform: translateY(50%);
+          
+          input{
+            width: 100%;
+            height:2rem;
+            margin: 0 7px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            font-size: 1rem;
+            padding-left: 10px;
+          }
+        }
+
+     
+
+      }
+    }
+  }
+
+  .chatSection{
+    width: 100%;
+    overflow: hidden;
+    // overflow-y: scroll;
+    height: 80%;
+    margin-bottom: 2rem;
+    // background-color: red;
+    position: relative;
+    
+    .chatClientPerson{
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items:flex-end;
+      position: relative;
+      right: 0.5rem;
+    
+    .chatPerson{
+      max-width: 80%;
+      margin-top: 5px;
+      padding: 7px 10px;
+      border-radius: 5px 0 5px 5px;
+      background: rgb(210, 200, 251);
+      text-align: left;
+    }
+  
+  }
+  .chatClientBoot{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items:flex-start;
+    left: 0.5rem;
+  
+  .chatBoot{
+    max-width: 80%;
+    margin-top: 5px;
+    padding: 7px 10px;
+    border-radius: 0px 5px 5px 5px;
+    background: rgb(217, 251, 200);
+    text-align: left;
+  }
+  .chatPersonImage{
+    width: 60px;
+    height: 60px;
+    background: red;
+    padding: 7px 10px;
+    border-radius: 6px;
+  }
+}
+}
+  
+
+}
+
+
+
+.chatClient::-webkit-scrollbar {
+  display: none;
+}
+
+.chatClient{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+}
+
