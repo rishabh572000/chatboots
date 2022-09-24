@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/chatboots/static/css/main.30b20ead.css",
+    "main.js": "/chatboots/static/js/main.bb39a162.js",
+    "static/js/787.0f9b4bd2.chunk.js": "/chatboots/static/js/787.0f9b4bd2.chunk.js",
+    "static/media/one.png": "/chatboots/static/media/one.6616b0a144deb4e3f93e.png",
+    "static/media/logo.svg": "/chatboots/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/chatboots/index.html",
+    "main.30b20ead.css.map": "/chatboots/static/css/main.30b20ead.css.map",
+    "main.bb39a162.js.map": "/chatboots/static/js/main.bb39a162.js.map",
+    "787.0f9b4bd2.chunk.js.map": "/chatboots/static/js/787.0f9b4bd2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30b20ead.css",
+    "static/js/main.bb39a162.js"
+  ]
+}
